@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="main_section">
+        <form action="">
+            <h1>Job Application</h1><span> (Web)</span>
+            <section id="first_section">
+            <div class="username">
+                <label for="username">First Name:</label>
+                <br>
+                <input type="text" name="username" id="username" placeholder="Enter First Name..." required>
+            </div>
+            <div class="lastname">
+                <label for="lastname">Last Name:</label>
+                <br>
+                <input type="text" name="lastname" id="lastname" placeholder="Enter Last Name..." required>
+            </div>
+        </section>
+        <section id="second_section">
+            <div class="email">
+                <label for="email">E-mail:</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Enter Email..." required>
+            </div>
+            <div class="job_role">
+                <label for="jobrole">Job Role:</label>
+                <br>
+                <select name="jobrole" id="" required>
+                    <option value="">Select Job Role</option>
+                    <option value="frontend">Frontend Developer</option>
+                    <option value="backend">Backend Developer</option>
+                    <option value="full_stack">FullStack Developer</option>
+                    <option value="ui_ux">UI UX Design</option>
+                </select>
+            </div>
+        </section>
+        <section id="third_section">
+            <div class="address">
+                <label for="address">Address:</label>
+                <br>
+                <textarea name="address" placeholder="Enter Address..." required></textarea>
+            </div>
+        </section>
+        <section id="forth_section">
+            <div class="cityname">
+                <label for="cityname">City:</label>
+                <br>
+                <input type="text" name="cityname" id="cityname" placeholder="Enter City Name..." required>
+            </div>
+            <div class="pincode">
+                <label for="pincode">Pincode:</label>
+                <br>
+                <input type="number" name="pincode" id="pincode" min="1" required placeholder="Enter Pincode Name...">
+            </div>
+        </section>
+        <section id="fifth_section">
+            <div class="date">
+            <label for="date">Date:</label>
+            <br>
+            <input type="date" name="date" id="date" value="2024-11-20" required>
+        </div>
+        <div class="cv">
+            <label for="cv">Upload Your CV:</label>
+            <br>
+            <input type="file" name="cv" id="cv" required>
+        </div>
+        </section>
+        <div id="button">
+            <button type="submit">Apply Now</button>
+        </div>
+        </form>
+    </section>
+</body>
+</html>
